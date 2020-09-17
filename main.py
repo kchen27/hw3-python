@@ -1,9 +1,9 @@
 # Author: Kyle Chen kvc5823@psu.edu
 
 def digit_sum(n):
-  if n<=0:
+  if n==0:
     return 0
-  return n%10 + digit_sum(int(n/10))
+  return n%10 + digit_sum(int(n//10))
 
 def run():
   n = int(input("Enter an int: "))
